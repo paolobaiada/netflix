@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
+}
+
+
+:root{
+    --red:#e50913;
+    --white:#ffff;
+    --blue:#0071eb;
+}
+.header__banner{
+    display: flex;
+    min-height: 4rem;
+    background-color:var(--white);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 411px) and (max-width: 480px){
+    .header__banner{
+        padding: 0 1rem;
+    }
+}
+
+.header__banner__announcement{
+    background-color: var(--red);
+    border-radius: 17px;
+    color: var(--white);
+    margin: .5rem 1rem;
+    padding: .2rem .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+}
+@media (min-width: 280px) and (max-width: 500px){
+    .header__banner__announcement{
+        font-size: 0.6rem;
+
+    }
+}
+.header__banner__announcement__text{
+    font-size: 1.1rem ;
+}
+
+@media (min-width: 375px) and (max-width: 410px){
+    .header__banner__announcement__text{
+        padding-left: .3rem;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 500px){
+    .header__banner__announcement__text{
+        display: flex;
+        flex-shrink: 6;
+        font-size: 14px;
+    }
+}
+
+.announcement_price{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+@media (min-width: 280px) and (max-width: 500px){
+    .announcement_price{
+        font-size: 15px;
+        font-weight: 800;
+    }
+}
+
+.header__banner__calltoaction__link{
+    color: var(--blue);
+    font-weight: 600;
+    padding-left: 1rem;  
+}
+
+@media (min-width: 280px) and (max-width: 500px){
+    .header__banner__calltoaction__link{
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 280px) and (max-width: 500px){
+    .header__banner__calltoaction__link{
+        font-size: .8rem;
+        padding: 0 .6rem;
+        white-space: nowrap;
+    }
+}
+
+.header__banner__calltoaction__link > a{
+    align-items: center;
+    color: inherit;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    margin: .5em auto;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 500px){
+    .header__banner__calltoaction__link > a{
+        line-height: 1em;
+        margin-right: .5em;
+        min-height: 37px;
+        min-width: 98px;
+        padding: 12px 1em;
+        width: auto;
+    }
+}
