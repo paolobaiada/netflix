@@ -36,12 +36,17 @@
     font-weight: 700;
     font-size: .8rem;
 }
+
+
 @media (min-width: 280px) and (max-width: 500px){
     .header__banner__announcement{
         font-size: 0.6rem;
-
+        margin: 0.5rem 0.7rem;
+        padding: 0.3rem 0.5rem;
     }
 }
+
+
 .header__banner__announcement__text{
     font-size: 1.1rem ;
 }
