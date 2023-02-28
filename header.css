@@ -17,6 +17,7 @@
     background-color:var(--white);
     justify-content: center;
     align-items: center;
+    
 }
 
 @media (min-width: 411px) and (max-width: 480px){
@@ -123,6 +124,7 @@
 .navbar__wrapper{
     width: 100%;
     padding-top:20px;
+    position: absolute;
 }
 .navbar{
     padding-top: 8px;
@@ -131,6 +133,7 @@
     height: 5rem;
     align-items: center;
     justify-content: space-between;
+    
 }
 @media only screen and (min-width: 550px) and (max-width: 949px){
     .navbar{
@@ -258,8 +261,23 @@
 
   /*prova immagine */
 
-.header-wrapper{
-    height: 100vh;
-    background-image: url(/assets/prova-bg-netflix.jpg);
+.navbar__wrapper{background-color:}
+.navbar{background-color:}
+
+.header_wrapper{
+    position: relative;
+    height: 750px;
+    width: 100vw;    
+}
+.background_images{
+    height: 750px;
+    width: 100%;
 }
 
+.background_image{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    
+    
+}
