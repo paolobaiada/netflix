@@ -8,9 +8,14 @@
 body{
     background-color: #000000;
 }
+@font-face {
+    font-family: "netflix";
+    src: url(assets/NetflixSans-Regular.woff2);
+}
 .faq-container{
     display: flex;
     justify-content: center;
+    font-family: "netflix";
 }
 .faq{
     width: 50%;
@@ -22,14 +27,14 @@ body{
     align-items: center;
     margin: 10px 0;
     padding: 20px;
-    background-color:#564d4d92;
+    background-color:#303030;
     color: #ffffff;
     height: 70px;
     font-size: 28px;
 }
 .right img{
     width: 35px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(80deg) brightness(101%) contrast(104%); ;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(80deg) brightness(101%) contrast(104%); 
 }
 .faq span{
     display: block;
