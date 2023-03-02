@@ -1,0 +1,201 @@
+
+
+@font-face {
+    font-family: "netflix";
+    src: url(assets/NetflixSans-Regular.woff2);
+}
+
+:root {
+    --color-01: black;
+    --coloro-02: #737373;
+    --border-color: #333;
+
+    --font-weight: 400;
+    --font-family: "netflix";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer {
+    margin: 0;
+    padding: 70px 45px;
+    box-sizing: border-box;
+    background-color: var(--color-01);
+    border-top: solid 8px var(--border-color);
+    height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .content-footer {
+    color: var(--coloro-02);
+    font-family: var(--font-family);
+    width: 900px;
+    height: 100%;
+}
+
+footer .content-footer .content-01 {
+    font-size: 17px;
+}
+
+footer .content-footer .content-01 a {
+    color: var(--coloro-02);
+    text-decoration: none;
+}
+
+footer .content-footer .content-01 a:hover {
+    text-decoration: underline;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    margin-top: 35px;
+    gap: 20px;
+}
+
+.grid-items {
+    font-size: 13px;
+    font-weight: var(--font-weight);
+}
+
+a {
+    color: var(--coloro-02);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* -- SELECT LANGUAGE -- */
+
+footer select {
+    width: 140px;
+    height: 57px;
+    font-size: 17px;
+    color: var(--coloro-02);
+    background-color: var(--color-01);
+    border: solid 1px var(--coloro-02);
+}
+
+footer .box-h5 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.iconaGlobe {
+    margin-right: px;
+}
+/* -- MEDIA QUERY -- */
+
+
+@media screen and (max-width: 801px) {
+
+    footer {
+        height: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    footer select {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .grid {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .grid {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 503px) {
+
+    footer {
+        height: auto;
+        padding: auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    footer select {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 439px) {
+    .grid {
+        gap: 12px;
+        font-size: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    footer {
+        height: auto;
+        padding: auto;
+    }
+
+    footer .content-footer .content-01 {
+        font-size: 17px;
+    }
+
+    .grid {
+        gap: 11px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+
+    footer {
+        height: 520px;
+        padding: auto;
+    }
+    .grid {
+        gap: 11px;
+    }
+
+    .grid-items {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 385px) {
+
+    footer {
+        height: 650px;
+    }
+    .grid {
+        gap: 10px;
+    }
+}
