@@ -16,9 +16,10 @@ body{
     display: flex;
     justify-content: center;
     font-family: "netflix";
+    border: 1px solid white;
 }
 .faq{
-    width: 50%;
+    width: 900px;
     margin: 50px;
 }
 .box{
@@ -50,13 +51,5 @@ body{
     }
     .box{
         font-size: 20px;
-    }
-}
-@media screen and (max-width:1018px) {
-    .faq span{
-        font-size: 20px;
-    }
-    .box{
-        font-size: 12px;
     }
 }
