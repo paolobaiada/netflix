@@ -1,15 +1,20 @@
+@font-face {
+    font-family: "netflix";
+    src: url(assets/NetflixSans-Regular.woff2);
+}
 .features{
     padding: 50px 12%;
     font-size: 22px;
-
 }
 .row{
+    font-family: "netflix";
     display: flex;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 0;
-
+    position: relative;
+    border: 1px solid #ffffff;
 }
 .text-colon{
     flex-basis: 50%;
@@ -19,14 +24,11 @@
     flex-basis: 50%;
     margin-bottom: 20px;
     object-fit: contain;
-
-
 }
 .img-colon img{
     display: block;
     width: 90%;
     margin: auto;
-    
 }
 .features h2{
     font-size: 50px;
@@ -64,4 +66,82 @@
 }
 body{
     color: #fff;
+}
+.overflow{
+    width: 26%;
+    height: 20%;
+    background-color: #000000;
+    border: 2px solid #ffffff49;
+    position: absolute;
+    left: 12% ;
+    bottom:102px;
+    border-radius: 10px;
+    padding: 3px;
+    
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.left img{
+width: 60px;
+}
+.center{
+    font-size: 17px ;
+}
+.center span{
+    color: #0071eb;
+}
+.right-animation
+{  
+    width: 40px;
+    height: 50px;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width:1400px) {
+    .row{
+        flex-direction: column;
+    }
+    .overflow{
+        left:32%;
+        top: 48%;
+        width: 35%;
+        height: 15%;
+    }
+}
+@media screen and (max-width:1030px) {
+    .overflow{
+        width: 60%;
+        left: 19%;
+        top: 46%;
+    }
+}
+@media screen and (max-width:597px) {
+    .overflow{
+        top: 35%;
+        height: 10%;
+    }
+    .left img{
+        width: 35px;
+    }
+    .center{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:476px){
+    .overflow{
+        top: 27%;
+        height: 10%;
+    }
+    .left img{
+        width: 30px;
+    }
+    .center{
+        font-size: 10px;
+    }
 }
