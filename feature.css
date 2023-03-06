@@ -1,9 +1,10 @@
-.features{
+.features {
     padding: 50px 12%;
     font-size: 22px;
 
 }
-.row{
+
+.row {
     display: flex;
     width: 100%;
     align-items: center;
@@ -11,47 +12,51 @@
     padding: 50px 0;
 
 }
-.text-colon{
+
+.text-colon {
     flex-basis: 50%;
     margin-bottom: 20px;
 }
-.img-colon{
+
+.img-colon {
     flex-basis: 50%;
     margin-bottom: 20px;
     object-fit: contain;
 
 
 }
-.img-colon img{
+
+.img-colon img {
     display: block;
     width: 90%;
     margin: auto;
-    
+
 }
-.features h2{
+
+.features h2 {
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 20px;
 
 }
 
-.video-container{
+.video-container {
     position: relative;
     background-position: center center;
     background-size: contain;
-    
-    
+
+
 }
 
-.video-background{
+.video-background {
     display: block;
     width: 100%;
     height: auto;
-    
+
 }
 
- .video {
-    position: absolute; 
+.video {
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -60,8 +65,43 @@
     justify-content: center;
     align-items: center;
 
-    
+
 }
-body{
+
+body {
     color: #fff;
+}
+@font-face {
+    font-family: "netflix";
+    src: url(assets/NetflixSans-Regular.woff2);
+}
+
+.video-container2 {
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+
+
+}
+
+.video-background2 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.video2 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: -1;
+    width: 59%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.text-colon{
+    font-family: "netflix";
 }
