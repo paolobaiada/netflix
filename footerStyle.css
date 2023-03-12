@@ -96,10 +96,11 @@ footer .box-h5 {
 }
 
 .iconaGlobe {
-    margin-right: px;
+    margin-right: 0;
 }
-/* -- MEDIA QUERY -- */
 
+
+/* -- MEDIA QUERY -- */
 
 @media screen and (max-width: 801px) {
 
