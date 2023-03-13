@@ -1,46 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+section {
+  width: 100%;
+  height: 100%;
+  border-bottom: 50px;
 }
 
-body{
-    background-color: #000000;
+.lista {
+  margin: 2px auto;
+  width: 100%;
+  max-width: 750px;
 }
-@font-face {
-    font-family: "netflix";
-    src: url(assets/NetflixSans-Regular.woff2);
+.lista li {
+  list-style: none;
+  width: 100%;
+  padding: 2px;
 }
-.faq-container{
+.lista li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+}
+input[type="radio"] {
+  display: none;
+}
+.paragraph {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  padding: 10px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.paragraph p {
+  width: 650px;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  margin-top: 10px;
+  text-align: center;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  height: 48px;
+}
+
+.container-button {
+  width: 84px;
+  height: 40px;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.start {
+  position: relative;
+  left: 2px;
+}
+.start p {
+  color: white;
+}
+.form span{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+@media (min-width: 949px) {
+  .container-button {
+    height: 100%;
+    width: 130px;
+  }
+}
+@media (max-width: 949px) {
+  .margin_email {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 949px) {
+  .faq {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 949px) {
+  .paragraph {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 739px) {
+  .email {
+    height: 45px;
+  }
+}
+@media (min-width: 949px) {
+  .email {
+    width: 400px;
+  }
+}
+@media (min-width: 949px) {
+  .form {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    font-family: "netflix";
+    gap: 0;
+    
+  }
 }
-.faq{
-    width: 50%;
-    margin: 50px;
+@media (max-width: 548px) {
+  .form {
+    width: 90%;
+    padding-left: 10%;
+  }
 }
-.box{
+
+@media (min-width: 950px) {
+  .form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    padding: 20px;
-    background-color:#303030;
-    color: #ffffff;
-    height: 70px;
-    font-size: 28px;
-}
-.right img{
-    width: 35px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(80deg) brightness(101%) contrast(104%); 
-}
-.faq span{
-    display: block;
-    text-align: center;
-    color: #ffffff;
-    font-size: 50px;
-    margin: 30px;
-    font-weight: bold;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
