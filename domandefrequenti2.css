@@ -7,15 +7,17 @@ body {
   background-color: black;
 }
 
-.faq-container-2 {
+/* .faq-container-2 {
   display: flex;
   justify-content: center;
   
-}
+} */
+
 .faq {
   width: 80%;
   margin: 5%;
 }
+
 .box-text {
   display: flex;
   justify-content: space-between;
@@ -39,11 +41,12 @@ body {
   margin: 30px;
   font-weight: bold;
 }
-section {
+
+/* section {
   width: 100%;
   height: 100vh;
   border-bottom: 50px;
-}
+} */
 .paragraph {
   color: white;
   display: flex;
