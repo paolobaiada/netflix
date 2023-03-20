@@ -9,17 +9,19 @@
     src: url(assets/NetflixSans-Regular.woff2);
 }
 .features{
-    padding: 50px 12%;
+      padding: 50px 0%;  
     font-size: 22px;
+    
 }
 .row{
     font-family: "netflix";
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 20px;
     position: relative;
     border-bottom: 5px solid rgba(128, 128, 128, 0.363);
+    
 }
 .image{
     position: relative;
@@ -96,12 +98,17 @@ body{
 }
 .left img{
 width: 60%;
+overflow: hidden;
+
+
 }
-.left{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-}
+  .left{
+    /*  width: 30%;  */ 
+     display: flex; 
+    justify-content: left;
+    margin-left: 5%;
+    
+}  
 .center{
     font-size: 17px ;
 }
@@ -124,7 +131,7 @@ width: 60%;
         left: 12%;
     }
     .left img{
-        width: 45%;
+        width: 40%;
     }
     .center{
         font-size: 70%;
@@ -142,11 +149,11 @@ width: 60%;
         width: 28%;
         left: 10%;
     }
-    .left img{
-        width: 40%;
-    }
+     .left img{
+        width: 32%;
+    } 
     .center{
-        font-size: 60%;
+        font-size: 45%;
     }
     .right-animation{
         width: 17%;
@@ -162,7 +169,7 @@ width: 60%;
         left: 14%;
     }
     .left img{
-        width: 35%;
+        width: 30%;
     }
     .center{
         font-size: 70%;
@@ -186,7 +193,7 @@ width: 60%;
         left: 10%;
     }
     .left img{
-        width: 50%;
+        width: 27%;
     }
     .center{
         font-size: 45%;
@@ -218,7 +225,7 @@ width: 60%;
         font-size: 43%;
     }
     .left img{
-        width: 41%;
+        width: 21%;
     }
     .right-animation{
         width: 12%;
