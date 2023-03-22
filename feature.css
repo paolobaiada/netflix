@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: "netflix";
+    src: url(assets/NetflixSans-Regular.woff2);
+}
+.features{
+      padding: 50px 0%;  
+    font-size: 22px;
+    
+}
+.row{
+    font-family: "netflix";
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 25px;
+    position: relative;
+    border-bottom: 5px solid rgba(128, 128, 128, 0.363);
+    
+}
+.image{
+    position: relative;
+}
+.text-colon{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-colon{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+.img-colon img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+.video-container{
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    
+}
+
+.video-background{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+ .video {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.video-container2 {    
+     position: relative;   
+      background-position: center center;    
+     background-size: contain;   
+}  
+.video-background2
+ {     
+    display: block;    
+     width: 100%;    
+     height: auto; 
+} 
+.video2 
+{    
+     position: absolute;     
+    top: 0;    
+     left: 20%;    
+     z-index: -1;    
+     width: 59%;    
+     height: 75%;    
+     justify-content: center;    
+     align-items: center;
+}
+body{
+    color: #fff;
+    background-color: #000000;
+}
+.overflow{
+    width: 26%;
+    height: 15%;
+    background-color: #000000;
+    border: 2px solid #ffffff49;
+    position: absolute;
+    left: 40% ;
+    top: 0px;
+    border-radius: 10px;
+    
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4%;
+}
+.left img{
+width: 60%;
+overflow: hidden;
+
+
+}
+  .left{
+    /*  width: 30%;  */ 
+     display: flex; 
+    justify-content: left;
+    margin-left: 5%;
+    
+}  
+.center{
+    font-size: 17px ;
+}
+.center span{
+    color: #0071eb;
+}
+.right-animation
+{  
+    width: 40px;
+    height: 50px;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width:1400px) and (max-width:2000px){
+    .overflow{
+        top: 57%;
+        height: 15%;
+        width: 26%;
+        left: 12%;
+    }
+    .left img{
+        width: 40%;
+    }
+    .center{
+        font-size: 70%;
+    }
+    .right-animation{
+        width: 17%;
+        height: 45%;
+        
+    }
+}
+@media screen and (min-width:748px) and (max-width:1400px){
+    .overflow{
+        top: 55%;
+        height: 15%;
+        width: 28%;
+        left: 10%;
+    }
+     .left img{
+        width: 32%;
+    } 
+    .center{
+        font-size: 45%;
+    }
+    .right-animation{
+        width: 17%;
+        height: 45%;
+        
+    }
+}
+@media screen and (min-width: 501px) and (max-width:748px){
+    .overflow{
+        top: 74%;
+        height: 11%;
+        width: 70%;
+        left: 14%;
+    }
+    .left img{
+        width: 30%;
+    }
+    .center{
+        font-size: 70%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .text-colon{
+        text-align: center;
+    }
+}
+
+ @media screen and (min-width: 361px) and (max-width:500px) {
+    .overflow{
+        top: 81%;
+        height: 10%;
+        width: 80%;
+        left: 10%;
+    }
+    .left img{
+        width: 27%;
+    }
+    .center{
+        font-size: 45%;
+    }
+    .right-animation{
+        width: 20%;
+        height: 70%;
+        
+    }
+    .row{
+        flex-direction: column;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .text-colon{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .overflow{
+        top: 81%;
+        height: 7%;
+        width: 80%;
+        left: 10%
+    }
+    .center{
+        font-size: 43%;
+    }
+    .left img{
+        width: 21%;
+    }
+    .right-animation{
+        width: 12%;
+        height: 65%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .text-colon{
+        text-align: center;
+    }
+}
+
