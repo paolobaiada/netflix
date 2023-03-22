@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+
+.faq {
+  width: 80%;
+  margin: 5%;
+}
+
+/* .box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #303030;
+  color: #ffffff;
+  height: 70px;
+ 
+} */
+.img img {
+  width: 35px;
+  filter: invert(100%);
+}
+
+.faq span {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+
+.paragraph {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  padding: 10px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.paragraph p {
+  width: 650px;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  margin-top: 10px;
+  text-align: center;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  height: 48px;
+}
+
+.container-button {
+  width: 84px;
+  height: 40px;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.start {
+  position: relative;
+  left: 2px;
+}
+.start p {
+  color: white;
+}
+.email {
+  padding-left: 10px;
+}
+.form span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+ @media (min-width: 949px) {
+  .container-button {
+    height: 100%;
+    width: 130px;
+  }
+}
+@media (max-width: 949px) {
+  .margin_email {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 949px) {
+  .faq {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 949px) {
+  .paragraph {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 739px) {
+  .email {
+    height: 45px;
+  }
+}
+@media (min-width: 949px) {
+  .email {
+    width: 400px;
+  }
+}
+@media (min-width: 949px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+}
+@media (max-width: 548px) {
+  .form {
+    width: 90%;
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 950px) {
+  .form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+} 
+ @media screen and (max-width: 2000px) {
+  .faq span {
+    font-size: 40px;
+  }
+  .box {
+    font-size: 20px;
+  }
+  .p {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .text {
+    font-size: 70%;
+  }
+  .img img {
+    width: 1.5rem;
+  }
+}
+
